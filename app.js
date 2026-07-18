@@ -289,6 +289,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const encodedMessage = encodeURIComponent(baseMessage);
             generatedWhatsAppUrl = `https://wa.me/${academyNumber}?text=${encodedMessage}`;
 
+            // Push lead conversion event to Google Tag Manager dataLayer
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'tax_lead_submitted',
+                'learning_type': learningType
+            });
+
             if (successModal) {
                 successModal.classList.add('active');
             } else {
