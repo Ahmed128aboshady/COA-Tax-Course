@@ -1062,25 +1062,27 @@ body.dark-theme .theme-toggle:hover {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--secondary-light);
-    border: 1px solid var(--glass-border);
-    color: var(--text-light);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: #FFFFFF;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1rem;
-    z-index: 10;
+    z-index: 99;
     transition: var(--transition);
+    box-shadow: var(--shadow-md);
 }
 
 .carousel-control:hover {
-    background-color: var(--primary);
-    border-color: var(--primary);
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+    transform: translateY(-50%) scale(1.05);
 }
 
-.carousel-control.prev { right: -60px; }
-.carousel-control.next { left: -60px; }
+.carousel-control.prev { right: -22px; }
+.carousel-control.next { left: -22px; }
 
 /* Indicators */
 .carousel-indicators {
