@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
         startAutoplay();
 
         function startAutoplay() {
-            slideInterval = setInterval(nextSlide, 5000);
+            slideInterval = setInterval(nextSlide, 15000); // 15 seconds to allow reading image reviews
         }
 
         function resetAutoplay() {
